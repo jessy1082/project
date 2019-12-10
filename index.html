@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="-UA-Compatible" content="ie=edge">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<body>
+    <h1 class="content-title1" >LET'S DO THIS: </h1>
+      <div>
+        <p>The following it's a pratice demo. It's a <em>clock</em> of the div.</p>
+     </div>
+     <h2 class="content-title2" >TIME IT'S NOW:</h2> 
+     <div id="clock">10:10:00</div> 
+
+     <div id='alarm-container'>
+			<h3>Set Alarm Time</h3>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+      </div>
+    </div>
+
+
+<div id='buttonHolder'>
+  <div>
+    <button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+  </div>
+
+  <div>
+    <button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
