@@ -3,30 +3,42 @@ body {
 }
 
 p {
-    margin: 10px 0;
+    margin: auto;
     padding-top: 10px;
-    border: 20px solid yellowgreen;
+    border: 5px dotted yellowgreen;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 h1.content-title1 {
     background-color: tomato;
-
 }
 
 h2.content-title2 {
     background-color: lightsalmon;
+}
 
+#spacing
+{   
+    margin-top: 50px;
+}
+
+#spacing1
+{   
+    margin-top: 200px;
 }
 #clock {
     height: 80px;
     width: 500px;
-    margin: 60px; 
+    margin: auto; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     color: rgb(88, 53, 53);
     font-size: 80px;
-    border: 20px solid burlywood;
+    border: 10px solid yellowgreen;
+    border-radius:20px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -45,13 +57,6 @@ h2.content-title2 {
     padding: 0.7em;
     color: white;
 }
-
-p{
-    font-size: 30px;
-
-}
-
-
 
 label {
 	display:inline-block;

@@ -12,25 +12,29 @@
 <body>
   <!--CURRENT TIME-->
   <h1 class="content-title1">LET'S DO THIS: </h1>
-  <div>
-    <p>The following it's a pratice demo. It's the <em>current</em> time.</p>
+  <div id="spacing">
+    <p>The following it's a practice demo. It's the <em>current</em> time.</p>
   </div>
   <h2 class="content-title2">TIME IT'S NOW:</h2>
   <div id="clock">10:10:00</div>
 
-<!--SET ALARM-->
-<h2 class="header"> </h2>
-<div>
-    <p>The following it's a pratice demo. It's the <em>alarm</em> time.</p>
+  <!--SET ALARM-->
+  <h2 class="header"> </h2>
+  <div id="spacing1">
+    <p>The following it's a practice demo. It's the <em>alarm</em> time.</p>
   </div>
-<div id="div1">
-   <audio id="alarm-sound" >
-    <source src="bell_alarm1.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-   </audio>
-  <input type="text" id="myText">
-  <button onclick="setAlarm()">Set Alarm</button>
-</div>
-  
+
+  <h2 class="content-title2">SET YOUR ALARM NOW:</h2>
+
+  <div id="div1">
+    <audio id="alarm-sound">
+      <source src="bell_alarm1.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <input type="text" id="myText">
+    <button onclick="setAlarm()">Set Alarm</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
