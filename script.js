@@ -1,4 +1,4 @@
-var alarm; 
+var myTime
 
 function showTime() {
     var time= new Date();
@@ -13,37 +13,28 @@ function showTime() {
 
     /*displays time*/
     var currentTime = hr + ":"+ min + ":" + sec;
-   console.log('currenttime', typeof currentTime)
+   myTime=currentTime
+    console.log('currenttime', typeof currentTime)
     /* display contents of variable currentTime on HTML file */
     document.getElementById("clock").innerHTML = currentTime;
 
     /*function will becalled after 1000 milliseconds=1sec*/
     setTimeout(showTime , 1000)
-  }
+}
   showTime()
 
-//function setAlarm() {
-  //  var alarmTime = addZero(selectedHour) + ":" + addZero(selectedMin) + ":" + addZero(selectedSec) + selectedAP;
-    //console.log('alarmTime:' + alarmTime);
- //}
-  // set the alarm to value
-  //  document.getElementsById("clock").inner= "setAlarm";
- // }
+   var setAlarm = function setAlarm(){
+    console.log('clicked')
+    const alarmSet =document.getElementById("myText").value
+    console.log('alarmSet:', alarmSet)
 
-    var selectedHour = hr.options[hr.selectedIndex].value;
-    var selectedMin = min.options[min.selectedIndex].value;
-    var selectedSec = sec.options[sec.selectedIndex].value;
-
-    var alarmTime = addZero(selectedHour) + ":" + addZero(selectedMin) + ":" + addZero(selectedSec);
-    console.log('alarmTime:' + alarmTime);
-
-    document.getElementById('alarmhrs').disabled = true;
-    document.getElementById('alarmmins').disabled = true;
-    document.getElementById('alarmsecs').disabled = true;
-
-
-    if (alarmTime == currentTime) {
-      sound.play();
-      }
-  
-  },1000);
+    if ( alarmSet === myTime) {
+      var alarmelement = document.createElement('audio');
+      alarmelement.setAttribute('id', 'alarm-sound');
+      var sourceelement = document.createElement('source');
+      sourceelement.setAttribute('src','bell_alarm1.mp3');
+      dsourceelement.setAttribute('src', 'alarm-sound');
+      alarmelement.appendchild(sourceelement);
+    }
+        
+  }

@@ -10,10 +10,12 @@ p {
 
 h1.content-title1 {
     background-color: tomato;
+
 }
 
 h2.content-title2 {
     background-color: lightsalmon;
+
 }
 #clock {
     height: 80px;
@@ -43,6 +45,13 @@ h2.content-title2 {
     padding: 0.7em;
     color: white;
 }
+
+p{
+    font-size: 30px;
+
+}
+
+
 
 label {
 	display:inline-block;
